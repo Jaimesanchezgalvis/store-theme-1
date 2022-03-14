@@ -1,0 +1,32 @@
+{
+  "store.custom#paginadeproducto": {
+    "blocks":[
+      "rich-text#paginadeproducto",
+      "flex-layout.row#productos"
+    ]
+  },
+  "rich-text#paginadeproducto": {
+    "props": {
+      "text": "# ***Pagina de producto***",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#productos":{
+    "children": ["shelf#productos"]
+  },
+  "shelf#productos":{
+    "blocks":["product-summary.shelf#productpage"],
+    "props":{
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList":{
+        "maxItems":10,
+        "itemsPerPage":4,
+        "minItemsPerPage":1,
+        "sroll": "BY PAGE",
+        "arrows": true,
+        "titleText": "Más vendidos"
+      }
+    }
+  }
+}

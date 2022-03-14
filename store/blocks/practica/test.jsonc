@@ -1,25 +1,22 @@
 {
-  // Titulo del sitio
-  "store.home": {
+  "store.custom#test": {
     "blocks": [
-      "rich-text#io",
-      "list-context.image-list#image",
-      "flex-layout.row#shelf"
+      "rich-text#test",
+      "list-context.image-list#test",
+      "shelf#test"
     ]
   },
-  "rich-text#io": {
+  "rich-text#test": {
     "props": {
-      "text": "## ***Rich Text Trilha IO***",
+      "text": "# ***Pagina de pruebas inicia a las 37***",
       "textPosition": "CENTER"
     }
   },
-  // Carrousel
-  "list-context.image-list#image": {
+  "list-context.image-list#test": {
     "children": [
-      "slider-layout#imagelist"
+      "slider-layout#test"
     ],
     "props": {
-      "heigth": 720,
       "images": [
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
@@ -44,45 +41,25 @@
       ]
     }
   },
-  "slider-layout#imagelist": {
+  "slider-layout#test": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
-    }
-  },
-  // muestra de productos
-  "flex-layout.row#shelf": {
-    "children": [
-      "list-context.product-list#demo1"
-    ]
-  },
-  "list-context.product-list#demo1": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "children": [
-      "slider-layout#demo-products"
-    ],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
-  "slider-layout#demo-products": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
         "tablet": 3,
         "phone": 1
       },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
+      "showNavigationArrows": "desktopOnly",
+      "blockClass":"carousel"
     }
-  }
+  },
+      "shelf#test":{
+        "blocks":[
+          "product-summary.shelf#test"
+        ],
+        "props":{
+        "orderBy": "OrderByTopSaleDESC"
+
+        }
+      }
+
 }

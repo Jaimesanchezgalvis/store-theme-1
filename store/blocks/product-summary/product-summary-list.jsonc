@@ -53,19 +53,7 @@
       "colGap": 7
     },
     "children": [
-      "stack-layout#summaryListDesktop",
-      "flex-layout.col#summaryDetailsListDesktop"
-    ]
-  },
-  "flex-layout.col#summaryDetailsListDesktop": {
-    "props": {
-      "preventVerticalStretch": true
-    },
-    "children": [
-      "vtex.store-components:product-brand#summaryListDesktop",
-      "product-summary-name#summaryListDesktop",
-      "flex-layout.col#productRating",
-      "flex-layout.row#productSpecifications"
+      "stack-layout#summaryListDesktop"
     ]
   },
   "flex-layout.row#productSpecifications": {

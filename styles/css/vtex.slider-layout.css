@@ -1,8 +1,21 @@
 .sliderLayoutContainer {
   justify-content: center;
 }
+
+.sliderLayoutContainer--shelf{
+  margin-top: 2em;
+}
 .sliderLayoutContainer--carousel {
   background-color: #F0F0F0;
+}
+
+.imageElement--carousel{
+  margin: 25px;
+  border-radius: 15px;
+  max-width: 80%;
+  background: #F0F0F0;
+  box-shadow: 20px 20px 60px #cccccc,
+  -20px -20px 60px #ffffff;
 }
 
 .sliderTrackContainer {

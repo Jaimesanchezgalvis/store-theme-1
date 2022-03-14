@@ -1,25 +1,23 @@
 {
-  // Titulo del sitio
-  "store.home": {
+  "store.custom#front": {
     "blocks": [
-      "rich-text#io",
-      "list-context.image-list#image",
-      "flex-layout.row#shelf"
+      "rich-text#uno",
+      "list-context.image-list#front2",
+      "flex-layout.row#productos2"
     ]
   },
-  "rich-text#io": {
+  "rich-text#uno": {
     "props": {
-      "text": "## ***Rich Text Trilha IO***",
+      "text": "# ***Pagina de productos 2***",
       "textPosition": "CENTER"
     }
   },
-  // Carrousel
-  "list-context.image-list#image": {
+  "list-context.image-list#front2": {
     "children": [
-      "slider-layout#imagelist"
+      "slider-layout#carrousel"
     ],
     "props": {
-      "heigth": 720,
+      "height": 720,
       "images": [
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
@@ -44,7 +42,7 @@
       ]
     }
   },
-  "slider-layout#imagelist": {
+  "slider-layout#carrousel": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -52,37 +50,18 @@
         "phone": 1
       },
       "infinite": true,
+      "blockClass": "carousel",
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "collectionId": "150"
     }
   },
-  // muestra de productos
-  "flex-layout.row#shelf": {
-    "children": [
-      "list-context.product-list#demo1"
-    ]
+  "flex-layout.row#productos2":{
+    "children": [ "shelf#front"]
   },
-  "list-context.product-list#demo1": {
-    "blocks": [
-      "product-summary.shelf"
-    ],
-    "children": [
-      "slider-layout#demo-products"
-    ],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"
+  "shelf#front":{
+      "blocks": ["product-summary.shelf#front"],
+      "props":{
+        "orderBy": "OrderByTopSaleDESC"
+      }
     }
-  },
-  "slider-layout#demo-products": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
-    }
-  }
 }

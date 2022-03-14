@@ -1,6 +1,8 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "rich-text#search",
+      "search-result-layout"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -8,7 +10,12 @@
       }
     }
   },
-
+  "rich-text#search": {
+    "props": {
+      "text": "Soy la pagina de search de producto",
+      "textPosition": "CENTER"
+    }
+  },
   "store.search#brand": {
     "blocks": ["search-result-layout"],
     "props": {
